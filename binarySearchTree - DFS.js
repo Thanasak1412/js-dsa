@@ -44,7 +44,7 @@
     }
 
     /* 
-        Preoder
+        Pre-oder
             1. Read the data of the node.
             2. Visit the left subtree.
             3. Visit the right subtree.
@@ -57,7 +57,7 @@
     }
 
     /* 
-        Inorder
+        In-order
             1. Visit the left subtree.
             2. Read the data of the node.
             3. Visit the right subtree.
@@ -70,6 +70,12 @@
       this.inOrder(root.right);
     }
 
+    /* 
+        Post-order
+            1. Visit the left subtree.
+            2. Visit the right subtree.
+            3. Read the data of the node.
+    */
     postOrder(root) {
       if (!root) return null;
       this.postOrder(root.left);
